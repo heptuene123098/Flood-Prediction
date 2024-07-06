@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Prediction Report</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header, .footer {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+        }
+
+        .header {
+            top: 0;
+            left: 0;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .background-image {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            min-height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .content {
+      
+            margin: 20px auto;
+            padding: 20px;
+            text-align: justify;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .content h2, .content h3, .content h4, .content p {
+            margin: 10px 0;
+        }
+
+        .content img {
+            max-width: 100%;
+            margin: 20px auto; 
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image" 
+    style="background-image: url('b1.png');">
+        <div class="header">
+            <h1>HNG11</h1>
+        </div>
+        <div class="center-content">
+            <h2 style="font-size: xx-large;">FLOOD PREDICTION</h2>
+            <br>
+            <h4>LAGOS STATE, NIGERIA</h4>
+        </div>
+        <div class="footer">
+            OTUENE HEPHZIBAH REGINALD | heptuene@gmail.com
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>SUMMARY</h2>
+        <p>This report outlines a comprehensive methodology for predicting floods in Lagos State, Nigeria, using historical data analysis and predictive modeling techniques. Key findings include the prediction of the next flood occurrence on July 10th, 2024, based on statistical analyses of meteorological variables. Recommendations emphasize the need for proactive flood management strategies, including improved infrastructure and community resilience programs, to mitigate risks and enhance preparedness in the face of recurring flood challenges.</p>
+    </div>
+    <section>
+    <div class="content">
+        <h2>Introduction</h2>
+        <p>Lagos State is located in the southwestern part of Nigeria, on the Atlantic coast in the Gulf of Guinea. It is Nigeria's smallest state by land area but one of its most populous and economically significant states. The region features diverse geography characterized by coastal areas, including the Lagos Lagoon and numerous islands such as Lagos Island, Victoria Island, and Ikoyi. The topography is predominantly flat, with low-lying terrain across much of the mainland and islands, influencing urban development, drainage systems, and environmental management.</p>
+        <br>
+        <h2>Floods</h2>
+        <p>Floods are a recurrent challenge in Lagos State, exacerbated by rapid urbanization, inadequate drainage infrastructure, and seasonal rainfall patterns. The city's low-lying topography and proximity to water bodies like the Lagos Lagoon and Atlantic Ocean amplify flood risks, especially during the rainy season. These floods often result in displacement, damage to property and infrastructure, economic losses, and health risks for residents. Despite efforts by the Lagos State government to improve drainage systems and implement mitigation measures, addressing the root causes of flooding remains a critical and ongoing challenge.</p>
+        <br>
+        <h2>Flood Prediction</h2>
+        <p>The importance of flood prediction for Lagos is paramount. It enables authorities to implement timely risk mitigation measures such as evacuations and flood barriers, thereby reducing property damage and preventing loss of lives. Predictions also play a crucial role in guiding infrastructure planning, facilitating the design of resilient drainage systems and urban layouts that minimize flood impact. Additionally, accurate flood forecasts enable efficient allocation of resources for emergency response and relief efforts. Monitoring flood patterns contributes significantly to environmental management by aiding in the preservation of ecosystems and maintaining water quality.</p>
+        <img src="p3.jpg" alt="Figure 1: Flood in Lagos">
+    </div>
+
+    <div class="content">
+        <h2>DATA COLLECTION AND ANALYSIS</h2>
+        <h3>Report Goal</h3>
+        <p>Predict the next flood date.</p>
+        <h3>Methodology</h3>
+        <p>Utilized Jupyter Notebook with a Python kernel.</p>
+        <h3>Prediction</h3>
+        <p>Predicted Date by day: 10th-11th July, 2024.</p>
+        <p>Primary Date by hour: 10th July, 2024.</p>
+        <h3>Daily Flood Prediction</h3>
+        <p>Historical data on meteorological variables (temperature, precipitation, humidity, wind speed, and pressure) were collected to analyze past flood occurrences in Lagos. This dataset served as the foundation for developing predictive models.</p>
+        <img src="Time_series_plot_of_precipitation.png" alt="Daily precipitation in Lagos">
+        <img src="sum_of_precipitation_and_flood_threshold.png" alt="Flood occurrence per day">
+        <img src="Hourly_Flood_Prediction.png" alt="Flood occurrence per hour">
+        <h3>Prediction Model</h3>
+        <p>Selected a robust predictive model validated against historical data and current weather patterns, ensuring accuracy in flood prediction.</p>
+        <img src="IDF_curve.png" alt="IDF Curve">
+        <img src="CDF_curve.png" alt="CDF Curve">
+        <img src="Daily_p_vs_f.png" alt="Comparison of daily precipitation and flood occurrence">
+        <img src="severerisk_levels.png" alt="Precipitation by severe risk level">
+        <h3>Findings and Results</h3>
+        <img src="Precipitation_by_month.png" alt="Total precipitation by month">
+        <img src="Precipitation_by_year.png" alt="Total precipitation by year">
+        <img src="DailyPrecipitation_over_time.png" alt="Total precipitation by day">
+        <img src="Yearly_p_vs_f.png" alt="Comparison of yearly precipitation and flood occurrence">
+        <img src="Monthly_p_vs_f.png" alt="Comparison of monthly precipitation and flood occurrence">
+        <img src="probsevererisk.png" alt="Precipitation vs precipitation probability by severe risk level">
+        <img src="precovsevererisk.png" alt="Precipitation vs precipitation cover by severe risk level">
+        <img src="sealevelpressure.png" alt="Precipitation vs sea level pressure by severe risk level">
+        <img src="cumpreflod.png" alt="Cumulative precipitation and flood occurrence">
+        <br>        
+        <h3>Conclusion</h3>
+        <p>Flood prediction plays a critical role in mitigating risks and enhancing resilience in Lagos State.</p>
+        <br>
+        <h3>Recommendations</h3>
+        <p>Advocation for improved drainage infrastructure, early warning systems, and community resilience programs based on predicted flood dates.</p>
+        <br>
+        <h3>Justification for Predicted Date</h3>
+        <p>The predicted date of the next flood in Lagos integrates historical flood occurrences, current weather patterns, and assessments of local infrastructure. Machine learning models were instrumental in analyzing these factors to forecast flood events, highlighting the critical need for proactive flood management strategies.</p>
+        <br>
+        
+        <p>Overall Assessment:
+                The RMSE values (both cross-validated and test) suggest that your model's predictions are relatively close to the actual values, which is a good sign of predictive accuracy.
+                The R-squared values (both cross-validated and test) indicate that while your model explains some of the variance in the target variable, there is room for improvement. Higher R-squared values would indicate a better fit of the model to the data.</p>
+         <br>
+                 For additional insights and learning opportunities, check out <a href="https://hng.tech/internship" target="_blank">HNG Internship</a> and <a href="https://hng.tech/premium" target="_blank">HNG Premium.</a> You can access the dataset and further details from <a href="https://heptuene123098.github.io/Flood-prediction/">my Github</a>.
+    </div>
+    <iframe src="model_perform.txt" type="cross-validation">
+        <br>
+    </section>
+</body>
+</html>
