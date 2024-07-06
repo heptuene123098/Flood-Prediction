@@ -1,0 +1,2 @@
+Cross-validated RMSE: 0.3044991822485497
+Cross-validated R-squared: 0.2210897073326048
